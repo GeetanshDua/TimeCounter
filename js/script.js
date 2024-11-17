@@ -13,7 +13,7 @@ let oneMin = document.querySelector('#oneMin');
 let fifteenMin = document.querySelector('#fifteenMin');
 
 let timePaused = false;
-let initialTime = 3;
+let initialTime = 15;
 let intervalId;
 
 
@@ -32,18 +32,11 @@ const countDown = () => {
         if (time <= 0) {
             clearInterval(intervalId); // Clear the interval when time runs out
             timeElement.innerText = "Time Finished!";
-
-            timeElement.classList.add('flicker-effect');
-
             initialTime = 0;
-            startbtn.disabled = true;
+            startbtn.disabled = false;
             pausebtn.disabled = true;
             resumebtn.disabled = true;
-            stopbtn.disabled = false;
-            fifteenSec.disabled = true;
-            thirtySec.disabled = true;
-            oneMin.disabled = true;
-            fifteenMin.disabled = true;
+            stopbtn.disabled = true;
         } else if (!timePaused) {
             time--;
             timeElement.innerText = time;
@@ -55,11 +48,6 @@ const countDown = () => {
     pausebtn.disabled = false;
     resumebtn.disabled = true;
     stopbtn.disabled = false;
-
-    fifteenSec.disabled = true;
-    thirtySec.disabled = true;
-    oneMin.disabled = true;
-    fifteenMin.disabled = true;
 };
 
 const resumeTimer = () => {
@@ -87,8 +75,6 @@ const stopTimer = () => {
     // Reset the displayed time to its initial value
     timeElement.innerText = initialTime; // Or whatever your initial time is
 
-    timeElement.classList.remove('flicker-effect');
-
     // Reset the timePaused flag
     timePaused = false;
 
@@ -99,11 +85,6 @@ const stopTimer = () => {
     pausebtn.disabled = true;
     resumebtn.disabled = true;
     stopbtn.disabled = true;
-
-    fifteenSec.disabled = false;
-    thirtySec.disabled = false;
-    oneMin.disabled = false;
-    fifteenMin.disabled = false;
 };
 
 // Initialize the timer with the initial value
