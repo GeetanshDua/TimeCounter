@@ -16,7 +16,7 @@
 }
 
 #clock-container {
-    height: 90vh;
+    height: 85vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -24,7 +24,7 @@
 
 .clock p {
     font-size: 90px;
-    margin-bottom: 40vh;
+    margin-bottom: 35vh;
 }
 
 .clock button {
