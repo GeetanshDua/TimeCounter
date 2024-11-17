@@ -1,2 +1,3 @@
 # TimeCounter
  
+Author: Geetansh Dua
