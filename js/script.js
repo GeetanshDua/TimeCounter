@@ -48,6 +48,10 @@ const countDown = () => {
     pausebtn.disabled = false;
     resumebtn.disabled = true;
     stopbtn.disabled = false;
+    fifteenSec.disabled = true;
+    thirtySec.disabled = true;
+    oneMin.disabled = true;
+    fifteenMin.disabled = true;
 };
 
 const resumeTimer = () => {
@@ -85,6 +89,10 @@ const stopTimer = () => {
     pausebtn.disabled = true;
     resumebtn.disabled = true;
     stopbtn.disabled = true;
+    fifteenSec.disabled = false;
+    thirtySec.disabled = false;
+    oneMin.disabled = false;
+    fifteenMin.disabled = false;
 };
 
 // Initialize the timer with the initial value
