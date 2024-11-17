@@ -33,6 +33,7 @@ const countDown = () => {
         if (time <= 0) {
             clearInterval(intervalId); // Clear the interval when time runs out
             timeElement.innerText = "Time Finished!";
+            initialTime = 0;
             startbtn.disabled = false;
             pausebtn.disabled = true;
             resumebtn.disabled = true;
