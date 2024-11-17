@@ -1,4 +1,3 @@
-
 let timeElement = document.querySelector('#time');
 
 //functions
