@@ -30,3 +30,21 @@
 .clock button {
     padding: 10px 20px;
 }
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flicker-effect {
+    animation: flicker 0.3s infinite;
+}
