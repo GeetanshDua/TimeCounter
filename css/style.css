@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 40px;
+}
+
+.addtime {
+    margin-top: 5px;
+}
+
+#clock-container {
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.clock p {
+    font-size: 100px;
+    margin-bottom: 40vh;
+}
+
+.clock button {
+    padding: 10px 20px;
+}
